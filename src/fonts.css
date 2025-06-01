@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "inter-Bold";
+    src: url("./fonts/Inter_18pt-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "inter-Regular";
+    src: url("./fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "inter-SemiBold";
+    src: url("./fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "inter-Medium";
+    src: url("./fonts/Inter_18pt-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter-SemiBold";
+  src: url("./fonts/Inter_18pt-SemiBold.ttf") format('truetype');
+}
