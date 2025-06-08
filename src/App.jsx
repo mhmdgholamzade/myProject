@@ -5,6 +5,8 @@ import ContentBody from './Components/ContentBody';
 import Footer from './Components/Footer';
 import BodyBtm from './Components/BodyBtm';
 import CommentForm from './Components/CommentForm';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ThankYou from './Components/ThankYou ';
 
 
 function App() {
@@ -15,7 +17,13 @@ function App() {
       <Header />
       <ContentBody />
       <BodyBtm/>
-      <CommentForm/>
+      
+      <Router>
+      <Routes>
+        <Route path="/" element={<CommentForm onSuccess={() => window.location.href = '/thank-you'} />} />
+        <Route path="/thank-you" element={<ThankYou/>} />
+      </Routes>
+    </Router>
       <Footer />
     </>
   );

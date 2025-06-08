@@ -4,16 +4,40 @@ const BodyBtm = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const toggleProject = (index) => {
-    
     setExpandedIndex(prevIndex => prevIndex === index ? null : index);
   };
 
   const projects = [
-    { title: 'EmailAddres',     company: '   Google', time: '2023 - Present' },
-    { title: 'Telegram ID',     company: ' Telegram', time: '2023 - Present' },
-    { title: 'Directory',       company: 'Instagram', time: '2023 - Present' },
-    { title: 'Twitter ID',      company: '  Twitter', time: '2023 - Present' },
-    { title: 'WhatsApp Hunter', company: ' WhatsApp', time: '2023 - Present' },
+    {
+      title: 'مشاور اول',
+      company: 'اقای حقانی',
+      time: '2023 - Present',
+      details: '+989367330202'
+    },
+    {
+      title: 'مشاور دوم',
+      company: 'اقای محمدیان',
+      time: '2023 - Present',
+      details: '+989965934362'
+    },
+    {
+      title: 'مشاور سوم',
+      company: 'اقای افتخاری پور',
+      time: '2023 - Present',
+      details: '+989152345578'
+    },
+    {
+      title: 'مشاور چهارم',
+      company: 'اقای رضاییان',
+      time: '2023 - Present',
+      details: '+989126957841'
+    },
+    {
+      title: 'مشاور پنجم',
+      company: 'اقای ازموده',
+      time: '2023 - Present',
+      details: '+989217418956'
+    },
   ];
 
   return (
@@ -21,7 +45,7 @@ const BodyBtm = () => {
       <div className="body-btm-wrapper">
         <div className="body-btm_left">
           <div className="body-btm_left-recent">
-            <div className="recent-worke">ارتباط با ما</div>
+            <div className="recent-worke">Commuunication</div>
             {projects.map((project, index) => (
               <div key={index} className="recent-worke_wrapper">
                 <div className="recent-worke-left">
@@ -36,7 +60,7 @@ const BodyBtm = () => {
                 </div>
                 {expandedIndex === index && (
                   <div className="project-details">
-                    <p>@mhmd_gholamzade</p>
+                    <p>{project.details}</p>
                   </div>
                 )}
               </div>
@@ -58,7 +82,6 @@ const BodyBtm = () => {
             </div>
           </div>
         </div>
-
         <div className="body-btm_right">
           <div className="Product-design">
             <h1 className="Product-design_txt">Product-design</h1>

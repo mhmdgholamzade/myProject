@@ -14,10 +14,7 @@ function Footer() {
       window.removeEventListener('offline', handleOffline);
     };
   }, []);
-
- 
-
-  return (
+     return (
     <footer className="footer">
       <div className="footer-main">
         <h1 className="footer-portfolio">Portfolio </h1>

@@ -1,23 +1,6 @@
 
-import React, { useState } from 'react';
 
 
-function ContentBodyUseState() {
-  const [showDetails, setShowDetails] = useState(false);
-
-  return (
-    <div>
-      < button onClick={() => setShowDetails(!showDetails)}>
-        {showDetails ? "مخفی‌کردن جزئیات" : "نمایش جزئیات"}
-      </button>
-      {showDetails && (
-        <div className="details">
-          
-        </div>
-      )}
-    </div>
-  );
-}
 
 
 
